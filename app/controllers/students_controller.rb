@@ -18,7 +18,8 @@ class StudentsController < ApplicationController
 
   def activate
     @student.toggle!(:active)
-    render "show"
+    # render "show"
+    redirect_to ac
   end
 
   private
