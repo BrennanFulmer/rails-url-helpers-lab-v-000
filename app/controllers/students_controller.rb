@@ -19,7 +19,7 @@ class StudentsController < ApplicationController
   def activate
     @student.toggle!(:active)
     # render "show"
-    redirect_to ac
+    redirect_to action: "show", id: @student.id
   end
 
   private
